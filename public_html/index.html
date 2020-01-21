@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>World of Pets</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+        <!--jQuery-->
+        <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!--Bootstrap JS-->
+        <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+        <!-- Custom JS -->
+        <script defer src="js/main.js"></script>
+    </head>
+    <body>
+        <nav class = "navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class ="navbar-brand" href="#"><img src = "images/arctic-fox.svg"/></a>
+            <button class = "navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarToggle" aria-controls="navBarToggle" aria-expanded="false" aria-label="Toggle nav">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+            <div class = "collapse navbar-collapse" id = "navBarToggle">
+                <ul class = "navbar-nav mr-auto">
+                    <li class = "nav-item active">
+                        <a class = "nav-link" href="#dogs">Dogs</a>
+                    </li>
+                    <li class ="nav-item">
+                        <a class = "nav-link" href="#cats">Cats</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header class = "jumbotron text-center">
+            <h1 class = "display-4">Welcome to World of Pets!</h1>
+            <h2>Home of Singapore's Pet Lovers</h2>
+        </header>
+        
+        <main class = "container">
+            <section id="dogs">
+                <h2>All About Dogs!</h2>
+                <div class ="row">
+                    <article class ="col-sm">
+                        <h3>Poodles</h3>
+                        <figure>
+                            <img class = "thumb-img" src="images/poodle_small.jpg" alt="Poodle" title="View larger image..."/>
+                            <figcaption>Standard Poodle</figcaption>
+                        </figure>
+                        <p>
+                            Poodles are a group of formal dog breeds, the Standard Poodle, Miniature Poodle and Toy Poodle...
+                        </p>
+                    </article>
+                    <article class="col-sm">
+                        <h3>Chihuahua</h3>
+                        <figure>
+                            <img class = "thumb-img" src="images/chihuahua_small.jpg" alt="Poodle" title="View larger image..."/>
+                            <figcaption>Standard chihuahua</figcaption>
+                        </figure>
+                        <p>
+                            The Chihuahua is the smallest breed of dog, and is named after the Mexican state of Chihuahua...
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <section id = "cats">
+                <h2>All About Cats!</h2>
+                <div class="row">
+                    <article class = "col-sm">
+                        <h3>Aegean</h3>
+                        <figure>
+                            <img class = "thumb-img" src="images/aegean_small.jpg" alt="Poodle" title="View larger image..."/>
+                            <figcaption>Standard Aegean</figcaption>
+                        </figure>
+                        <p>
+                            The Aegean is a breed of cat that comes from Greece
+                        </p>
+                    </article>
+                    <article class = "col-sm">
+                        <h3>Korat</h3>
+                        <figure>
+                            <img class = "thumb-img" src="images/korat_small.jpg" alt="Poodle" title="View larger image..."/>
+                            <figcaption>Standard Korat</figcaption>
+                        </figure>
+                        <p>
+                            The Korat is a breed of cat that comes from Thailand
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class = "container">
+            <p><em>Copyright &copy; 2020 World of Pets Pte. Ltd.</em></p>
+            <p>Website Logo made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+        </footer>
+    </body>
+</html>
