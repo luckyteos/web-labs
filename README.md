@@ -1,2 +1,2 @@
 # web-labs
-My solutions to the web labs. Available strictly for reference only
+Current Development of the world of pets website. 
