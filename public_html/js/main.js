@@ -8,12 +8,14 @@ $(document).ready(function() {
     var allThumbNails = document.getElementsByClassName("thumb-img");
     var x;
     for(x of allThumbNails) {
-        x.addEventListener("click", function(){
-            popUpImage(this);
+        x.addEventListener("click", function(e){
+            var testArr = e.target.parentElement.children;
+            if(testArr[0].classList.contains("thumb-big-img") === false) {
+                popUpImage(this);
+            }
         });
     }
    document.addEventListener("click", function(e) {
-
         // Checking if the target selected in the click event is the thumbnail
         // If its false, which means the user is not clicking on the thumbnail, then hide the image
         if (e.target.classList.contains("thumb-img") === false && e.target.classList.contains("big-img") === false) {
@@ -33,7 +35,6 @@ function popUpImage(e) {
     var largePath = "_large.jpg";
     var largeImgPath = imgPath.concat(largePath);
     bigImg.src = largeImgPath;
-    popUpFrame.setAttribute("position", "relative");
     popUpFrame.appendChild(bigImg);
     var parentImg = e.parentNode;
     parentImg.insertBefore(popUpFrame, parentImg.children[0]);
